@@ -4,7 +4,7 @@ const mysql = require('mysql');
 const bcrypt = require('bcrypt');
 const session = require('express-session');
 
-const port = 4200 || process.env.port;
+const port = 8080 || process.env.port;
 const app = express();
 
 var con = mysql.createConnection({
