@@ -21,7 +21,7 @@ con.connect(function (err) {
 
 const initDB = function () {
   return new Promise((resolve, reject) => {
-    db.connect(err => {
+    con.connect(err => {
       if (err) {
         console.error('Unable to connect to database.', err);
         console.error('Retrying in 5s.');
